@@ -1,0 +1,103 @@
+/* Reset default margin and padding */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Apply gradient background to the entire page */
+body {
+    background: linear-gradient(to right, #00274d, #800080);
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Section */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.header-img {
+    max-width: 80%;
+    height: auto;
+}
+
+/* Main Content */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Event Details */
+.event-details {
+    width: 50%;
+    padding: 15px;
+    text-align: left;
+}
+
+/* Image Section */
+.image-container {
+    width: 40%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Register & Back Button */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-btn, .back-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.register-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.back-btn {
+    background-color: #2196F3;
+    color: white;
+}
+
+.register-btn:hover, .back-btn:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container, .event-details {
+        width: 100%;
+    }
+}
