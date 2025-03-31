@@ -1,11 +1,11 @@
 function registerEvent(eventNumber) {
     // Google Form links for each event
     const eventLinks = {
-        1: "https://forms.gle/your_updated_google_form_link_1",
-        2: "https://forms.gle/your_updated_google_form_link_2",
-        3: "https://forms.gle/your_updated_google_form_link_3",
-        4: "https://forms.gle/your_updated_google_form_link_4",
-        5: "https://forms.gle/your_updated_google_form_link_5"
+        1: "https://forms.gle/JukHnJrbxzGvgLJL6",
+        2: "https://forms.gle/uJVbMMdSgAftfB3p6",
+        3: "https://forms.gle/bNCsGT6KhkjFKo9M8",
+        4: "https://forms.gle/PPhKRdCqKfp5r8Ba8",
+        5: "https://forms.gle/r8Q1eJGLNPLP1Mjj8"
 
     };
 
