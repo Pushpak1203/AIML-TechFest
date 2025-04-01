@@ -99,6 +99,22 @@ header {
     background: #cc0000;
 }
 
+/* Organizers Section */
+.organizers {
+    margin-bottom: 50px; /* Adjusted spacing */
+}
+
+/* Sponsors Section */
+.sponsors {
+    margin-top: 50px; /* Adjusted spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
 /* Footer */
 .footer {
     margin-top: 20px;
@@ -108,6 +124,23 @@ header {
     width: 100%;
     text-align: center;
     border-top: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Organizers Section - Added Flexbox for Better Alignment */
+.organizers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.mentor {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 220px;
 }
 
 /* Responsive Design */
