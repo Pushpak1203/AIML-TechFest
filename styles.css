@@ -108,6 +108,8 @@ header {
 .sponsors {
     margin-top: 50px; /* Adjusted spacing */
     display: flex;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
