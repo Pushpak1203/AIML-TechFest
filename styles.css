@@ -53,11 +53,6 @@ header {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
-/* Added space between events */
-.event:not(:last-child) {
-    margin-bottom: 30px;
-}
-
 .event:nth-child(even) {
     flex-direction: row-reverse;
 }
@@ -69,7 +64,6 @@ header {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* Image Hover Effect with Glow */
 .event img:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
@@ -81,52 +75,28 @@ header {
     text-align: left;
 }
 
-/* More Info Button */
-.more-info-btn {
+/* Register Button with Red Box and Rounded Edges */
+.register {
     display: inline-block;
     margin: 15px 0;
-    padding: 10px 20px;
-    background: #0080ff;
+    padding: 12px 25px;
+    background: #ff4d4d;
     color: white;
     font-size: 18px;
-    text-align: center;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
     text-decoration: none;
-    border-radius: 5px;
+    text-align: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.more-info-btn:hover {
+/* Hover Effect (Same as Image Glow) */
+.register:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(0, 128, 255, 0.8);
-    background: #0055cc;
-}
-
-/* Organizers & Faculty Mentors */
-.organizers {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-.mentor {
-    width: 22%;
-    text-align: center;
-    padding: 10px;
-    font-size: 14px;
-}
-
-/* Sponsors Section */
-.sponsors {
-    width: 90%;
-    max-width: 1200px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(255, 77, 77, 0.8);
+    background: #cc0000;
 }
 
 /* Footer */
@@ -139,30 +109,6 @@ header {
     text-align: center;
     border-top: 2px solid rgba(255, 255, 255, 0.3);
 }
-
-.register-btn, .back-btn {
-    display: inline-block;
-    padding: 10px 15px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.register-btn {
-    background-color: #4CAF50;
-    color: white;
-}
-
-.back-btn {
-    background-color: #2196F3;
-    color: white;
-}
-
-.register-btn:hover, .back-btn:hover {
-    opacity: 0.8;
-}
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -177,14 +123,5 @@ header {
 
     .event img, .event-details {
         width: 100%;
-    }
-
-    .organizers {
-        flex-direction: column;
-    }
-
-    .mentor {
-        width: 100%;
-        padding: 15px 0;
     }
 }
